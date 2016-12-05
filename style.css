@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+
+html, #app {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+#toolbar {
+    float: left;
+    width: 80px;
+    height: 100%;
+    background-color: #30414D;
+    color: #767676;
+    padding: 35px 25px 25px 25px;
+}
+
+#notes-list {
+    float: left;
+    width: 300px;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    border-right: 1px solid #ddd;
+}
+
+#list-header {
+    padding: 5px 25px 25px 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+#list-header h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 8px;
+}
+
+#notes-list .container {
+    height: calc(100% - 137px);
+    max-height: calc(100% - 137px);
+    overflow: auto;
+    width: 100%;
+    padding: 0;
+}
+
+#notes-list .container .list-group-item {
+    z-index: 0;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.list-group-item-heading {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+#note-editor {
+    height: 100%;
+    margin-left: 380px;
+}
+
+#note-editor textarea {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+}
+
+#toolbar i {
+    font-size: 30px;
+    margin-bottom: 35px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+}
+
+#toolbar i:hover {
+    opacity: 1;
+}
+
+.starred {
+    color: #F7AE4F;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover {
+    color: #333;
+    background-color: #eaf0fb;
+    border-color: #eaf0fb;
+}
+
+#notes-list .container .note-title {
+    color: #000;
+    word-break: break-all;
+    overflow: hidden;
+    max-height: 16px;
+}
+
+.note-time {
+    color: #c2c2c2;
+}
+
+.note-introduce {
+    max-height: 40px;
+    overflow: hidden;
+    word-break: break-all;
+    color: #82828c;
+}
+
+.wrapper-head {
+    padding: 0 20px;
+    height: 10%;
+    border-bottom: 1px solid #e0e1e5;
+    display: -webkit-flex;
+}
+
+.note-head {
+    width: 100%;
+}
+
+input.top-title {
+    padding: 24px 0;
+}
+
+.top-title {
+    width: 100%;
+    display: inline-block;
+    background-color: transparent;
+    border: 0 none;
+    font-size: 18px;
+    color: #393939;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+}
+
+input, textarea {
+    border: 1px solid #e0e1e5;
+    border-radius: 2px;
+    line-height: 22px;
+    padding: 5px 10px;
+}
+
+input, textarea {
+    webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+input, textarea {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+.wrapper-body {
+    height: 90%;
+}
+
+.note-detail {
+    height: 100%;
+}
